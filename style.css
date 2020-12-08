@@ -1,0 +1,682 @@
+/*Go and get Nunito and Nunito Sans from Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+
+html {
+  background: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/*Header and Flexbox info*/
+#header {
+  background-color: #ffffff;
+  padding: 0px;
+  margin: -10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#logo {
+  align-self: center;
+  width: 350px;
+  padding: 15px;
+}
+
+#flexbox {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.nav {
+  padding: 30px;
+}
+
+#search {
+  width: 70px;
+  padding-right: 65px;
+}
+
+a:link {
+  color: black;
+   text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  color: #a1442b;
+}
+
+a:visted {
+  color: black;
+}
+
+/* Text Styling*/
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 58px;
+  color: #a1442b;
+}
+
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  color: #a1442b;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #a1442b;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #403e39;
+}
+
+/*Styling of the Bio*/
+#flexboxbio {
+  background-color: #efe0c4;
+  margin: -10px;
+  margin-top: -5px;
+}
+
+#me {
+  width: 100%;
+  margin-left: -10px;
+  display: flex;
+}
+
+#flexboxcolumn {
+  background-color: #efe0c4;
+  display: flex;
+  width: 100%;
+}
+
+#bodybio {
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-right: 115px;
+}
+
+/*Gallery Styling*/
+
+.row {
+  display: flex;
+  flex-wrap: no-wrap;
+
+  justify-content: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#van img {
+    cursor: pointer;
+}
+
+.secondary {
+position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  opacity: 0;
+  background: orange;
+  color: black;
+  transition: 0.4s ease-out;
+}
+
+#van img:hover .secondary {
+    opacity: 0.6;
+}
+
+.column img {
+padding-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+#van img:hover {
+   color: #ffffff;
+  transition: .3s ease-out 0.1s;
+}
+
+#flexboxskills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #efe0c4;
+  margin-top: -11px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  padding-bottom:25px;
+}
+
+#resume {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 120px;
+}
+
+#expertise,
+#accolades {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#accolades2 {
+  visbility: hidden;
+}
+
+#flexboxbio {
+  background-color: #efe0c4;
+  margin: -10px;
+  margin-top: -5px;
+}
+
+/*Stlying the Contact Me*/
+#me2contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#me2 {
+width: 70%;
+  display: flex;
+    margin-right: -10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#flexboxcontact {
+  display: flex;
+}
+
+#contactbio {
+display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  padding-left: 265px;
+}
+
+
+button {
+  font-family: "Nunito", sans-serif;
+  color: #A53523;
+  font-weight: medium;
+  font-size: 25px;
+  background-color: #efe0c4;
+  max-width: 450px;
+  padding: 15px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  align-items: center;
+}
+
+#callme {
+  padding-left: 45px;
+
+}
+
+#emailme {
+    padding-left: 50px;
+  padding-top: 25px;
+
+}
+
+button:hover {
+  background-color: #A53523;
+  color: #ffffff;
+  transition: .3s ease-out 0.1s;
+  box-shadow: .2px .3px .3px .2px #666666;
+}
+
+/*Instagram Styling*/
+#followme {
+  text-align: center;
+}
+
+#instagramfeed {
+
+}
+
+#footer {
+  text-align:center;
+  background-color: #efe0c4;
+  padding: 15px;
+  margin: -10px;
+  margin-top: 0px;
+
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 25px;
+  }
+  
+  #logo {
+    justify-content: center;
+    display: flex;
+    width: 110%
+  }
+  
+  .nav {
+  padding: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #search {
+    width: 30%;
+  }
+  
+  #me {
+  width: 100%;
+  margin-left: -10px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 22px;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  #header {
+   justify-content: center;
+    display: flex;
+    padding-left: 35px;
+  }
+  
+  #logo {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+  }
+  
+  #search {
+    width: 30%;
+  }
+  
+  #me {
+  width: 220%;
+  content-align: center;
+  margin-left: -10px;
+  display: flex;
+  }
+  
+  #bodybio {
+    margin-top: 385px;
+    margin-left: -200px;
+    text-align: center;
+  }
+  
+  #van {
+    width: 207%;
+  }
+  
+  #book {
+    width: 207%;
+    margin-left: -292px;
+    margin-top: 425px;
+    display: flex;
+    justify-content: center;
+    padding-left: 4px;
+  }
+  
+  #pie {
+    width: 207%;
+    margin-top: 770px;
+    align-content: center;
+  }
+  
+   #bio {
+    width: 207%;
+    margin-left: -292px;
+    margin-top: 526px;
+         padding-left: 4px;
+  }
+  
+  #resume {
+    margin-top: 350px; 
+    padding-bottom: 30px;
+  }
+  
+  #flexboxskills {
+    content-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #expertise {
+    margin-left:;
+        flex-direction: column;
+    line-height:;
+    MARGIN-BOTTOM:;
+  }
+  
+  #accolades {
+    visibility:;
+    padding-top: px;
+    margin-top: -55px;
+  }
+  
+  #contactbio {
+    margin-left: -85px;
+    margin-top: 12px;
+    padding-bottom: 40px;
+  }
+  
+  #me2contact {
+visibility: hidden;
+  }
+  
+  #me2 {
+    visibiliyy:hidden;
+  }
+}
+  
+  @media (max-width: 600px) {
+  p {
+    font-size: 25px;
+  }
+  
+  #logo {
+    justify-content: center;
+    display: flex;
+    width: 110%
+  }
+  
+  .nav {
+  padding: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #search {
+    width: 30%;
+  }
+  
+  #me {
+  width: 100%;
+  margin-left: -10px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 22px;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  #header {
+   justify-content: center;
+    display: flex;
+    padding-left: 35px;
+  }
+  
+  #logo {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+    width: 
+  }
+  
+  #search {
+    width: 30%;
+  }
+  
+  #me {
+  width: 220%;
+  content-align: center;
+  margin-left: -10px;
+  display: flex;
+  }
+  
+  #bodybio {
+    margin-top: 385px;
+    margin-left: -200px;
+    text-align: center;
+  }
+  
+  #van {
+    width: 207%;
+  }
+  
+  #book {
+    width: 207%;
+    margin-left: -292px;
+    margin-top: 425px;
+    display: flex;
+    justify-content: center;
+    padding-left: 4px;
+  }
+  
+  #pie {
+    width: 207%;
+    margin-top: 770px;
+    align-content: center;
+  }
+  
+   #bio {
+    width: 207%;
+    margin-left: -292px;
+    margin-top: 526px;
+         padding-left: 4px;
+  }
+  
+  #resume {
+    margin-top: 350px; 
+    padding-bottom: 30px;
+  }
+  
+  #flexboxskills {
+    content-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #expertise {
+    margin-left:;
+        flex-direction: column;
+    line-height:;
+    MARGIN-BOTTOM:;
+  }
+  
+  #accolades {
+    visibility:;
+    padding-top: px;
+    margin-top: -55px;
+  }
+  
+  #contactbio {
+    margin-left: -130px;
+    margin-top: 12px;
+    padding-bottom: 40px;
+  }
+  
+  #me2contact {
+visibility: hidden;
+  }
+  
+  #me2 {
+    visibiliyy:hidden;
+  }
+}
+    
+    @media (max-width: 600px) {
+  p {
+    font-size: 25px;
+  }
+  
+  #logo {
+    justify-content: center;
+    display: flex;
+    width: 110%
+  }
+  
+  .nav {
+  padding: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #search {
+    width: 30%;
+  }
+  
+  #me {
+  width: 100%;
+  margin-left: -10px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  #header {
+   justify-content: center;
+    display: flex;
+    padding-left: 5px;
+  }
+  
+  #logo {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+    width: 90%;
+  }
+  
+  #flexbox {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.nav {
+margin: -6px;
+  margin-right: -14px;
+  display: flex;
+  justify-content: center;
+}
+  
+  
+  #search {
+    width: 30%;
+    padding-left: 8px;
+  }
+  
+  #me {
+  width: 205%;
+  content-align: center;
+  margin-left: -10px;
+  display: flex;
+  }
+  
+  #bodybio {
+    margin-top: 350px;
+    margin-left: -200px;
+    text-align: center;
+  }
+  
+  #van {
+    width: 207%;
+  }
+  
+  #book {
+    width: 207%;
+    margin-top: 352px;
+    padding-left: 50px;
+  }
+  
+  #pie {
+    width: 207%;
+    margin-top: 635px;
+    align-content: center;
+  }
+  
+   #bio {
+    width: 207%;
+padding-left: 50px;
+    margin-top: 435px;
+  }
+  
+  #resume {
+    margin-top: 350px; 
+    padding-bottom: 30px;
+  }
+  
+  #flexboxskills {
+    content-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #expertise {
+    margin-left:;
+        flex-direction: column;
+    line-height:;
+    MARGIN-BOTTOM:;
+  }
+  
+  #accolades {
+    visibility:;
+    padding-top: px;
+    margin-top: -55px;
+  }
+  
+  #contactbio {
+    margin-left: px;
+    margin-top: 12px;
+    padding-bottom: 40px;
+  }
+  
+  #me2contact {
+visibility: hidden;
+  }
+  
+  #me2 {
+    visibiliyy:hidden;
+  }
+}
